@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-rsvp-provider="formspree">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دعوة عقد قران علي وكريمته</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <main class="invitation" id="invitation">
+    <audio id="invitationMusic" src="assets/audio/invitation-melody.mp3"
+           preload="none" loop></audio>
+    <button class="music-toggle" id="musicToggle" type="button"
+            aria-label="تشغيل الموسيقى" aria-pressed="false"
+            title="تشغيل الموسيقى">
+      <span aria-hidden="true">♫</span>
+    </button>
+    <section class="first-scene" id="firstScene"
+             aria-label="افتتاح الدعوة">
+
+      <!-- ورقة الدعوة التي تظهر بعد انفتاح الستارة -->
+      <div class="revealed-content">
+        <p class="invitation-heading">دعوة عقد قران</p>
+
+        <h1 class="couple-names">
+          <span class="groom-name">علي</span>
+          <span class="name-divider">&amp;</span>
+          <span class="bride-name">كريمته</span>
+        </h1>
+
+        <button class="scene-button next-scene"
+                id="nextScene" type="button" disabled>
+          متابعة الدعوة
+        </button>
+      </div>
+
+      <!-- ستارتان تنفرجان عند لمس الفراشة -->
+      <div class="curtain" id="curtain" aria-hidden="true">
+        <div class="curtain-panel curtain-panel-left"></div>
+        <div class="curtain-panel curtain-panel-right"></div>
+      </div>
+
+      <p class="instruction">
+        المس الفراشة لفتح الدعوة
+      </p>
+    </section>
+
+      <!-- الفراشة تُرافق المدعو بين صفحات الدعوة -->
+      <button class="butterfly-trigger" id="openCurtain" type="button"
+              aria-label="المس الفراشة لفتح الدعوة">
+        <svg viewBox="-70 -58 140 120"
+             xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="butterflyUpper"
+                            x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#fffdf4"/>
+              <stop offset=".48" stop-color="#eff4ee"/>
+              <stop offset=".82" stop-color="#d9e7e6"/>
+              <stop offset="1" stop-color="#b9c9c6"/>
+            </linearGradient>
+            <linearGradient id="butterflyLower"
+                            x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#fffdf6"/>
+              <stop offset=".7" stop-color="#e6ece3"/>
+              <stop offset="1" stop-color="#b7c5bf"/>
+            </linearGradient>
+          </defs>
+
+          <g class="wing wing-left">
+            <path d="M-3 -2
+                     C-17 -37 -39 -53 -57 -45
+                     C-73 -38 -66 -13 -47 -4
+                     C-31 4 -14 3 -3 -2Z"
+                  fill="url(#butterflyUpper)"
+                  stroke="#ad9a77" stroke-width="1.6"/>
+            <path d="M-3 3
+                     C-19 -5 -43 -8 -53 5
+                     C-63 18 -48 37 -33 39
+                     C-19 40 -8 24 -3 3Z"
+                  fill="url(#butterflyLower)"
+                  stroke="#ad9a77" stroke-width="1.6"/>
+            <path d="M-6 -3 Q-30 -34 -55 -39
+                     M-6 -2 Q-36 -21 -60 -22
+                     M-6 1 Q-30 -5 -48 1
+                     M-7 6 Q-30 6 -49 13
+                     M-7 9 Q-24 21 -34 34"
+                  fill="none" stroke="#b9aa87"
+                  stroke-width="1.2" opacity=".6"/>
+          </g>
+
+          <g class="wing wing-right">
+            <path d="M3 -2
+                     C17 -37 39 -53 57 -45
+                     C73 -38 66 -13 47 -4
+                     C31 4 14 3 3 -2Z"
+                  fill="url(#butterflyUpper)"
+                  stroke="#ad9a77" stroke-width="1.6"/>
+            <path d="M3 3
+                     C19 -5 43 -8 53 5
+                     C63 18 48 37 33 39
+                     C19 40 8 24 3 3Z"
+                  fill="url(#butterflyLower)"
+                  stroke="#ad9a77" stroke-width="1.6"/>
+            <path d="M6 -3 Q30 -34 55 -39
+                     M6 -2 Q36 -21 60 -22
+                     M6 1 Q30 -5 48 1
+                     M7 6 Q30 6 49 13
+                     M7 9 Q24 21 34 34"
+                  fill="none" stroke="#b9aa87"
+                  stroke-width="1.2" opacity=".6"/>
+          </g>
+
+          <path d="M0 -10 C-3 -3 -3 20 0 29
+                   C3 20 3 -3 0 -10Z"
+                fill="#5c665f"/>
+          <circle cx="0" cy="-12" r="3.3" fill="#5c665f"/>
+          <path d="M-1 -14 Q-7 -26 -14 -27
+                   M1 -14 Q7 -26 14 -27"
+                fill="none" stroke="#5c665f"
+                stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+    <section class="second-scene" id="secondScene"
+             aria-label="نص الدعوة" aria-hidden="true">
+      <div class="second-scene-content">
+        <p class="scene-intro">
+          بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+        </p>
+
+        <p class="invitation-lead">يتشرف</p>
+
+        <div class="hosts">
+          <div class="host">
+            <span class="host-title">الأستاذ</span>
+            <span class="host-name">عبدالله السويد</span>
+          </div>
+
+          <span class="hosts-divider" aria-hidden="true">&amp;</span>
+
+          <div class="host">
+            <span class="host-title">السيد</span>
+            <span class="host-name">محمد المرعي</span>
+          </div>
+        </div>
+
+        <p class="invitation-message">
+          بدعوتكم لحضور عقد قران ولديهما
+        </p>
+
+        <button class="scene-button event-next"
+                id="showEvent" type="button">
+          موعد الحفل ومكانه
+        </button>
+
+        <button class="scene-button back-scene"
+                id="backScene" type="button">
+          العودة إلى الأسماء
+        </button>
+      </div>
+    </section>
+
+    <section class="third-scene" id="thirdScene"
+             aria-label="موعد الحفل ومكانه" aria-hidden="true">
+      <div class="event-view event-date-view" id="dateView" aria-hidden="false">
+        <p class="section-eyebrow">بفرحٍ ومحبة</p>
+        <h2>موعد عقد القران</h2>
+
+        <div class="date-emblem" aria-label="الخميس الأول من أكتوبر ٢٠٢٦">
+          <span class="date-label">التاريخ</span>
+          <strong lang="en" dir="ltr">01</strong>
+          <span class="date-month">أكتوبر</span>
+          <span class="date-year">٢٠٢٦</span>
+        </div>
+
+        <div class="date-details">
+          <div><span>اليوم</span><b>الخميس</b></div>
+          <div><span>الساعة</span><time datetime="2026-10-01T18:00">٦:٠٠ مساءً</time></div>
+        </div>
+        <button class="scene-button" id="showLocation" type="button">
+          عرض موقع الصالة
+        </button>
+        <button class="text-button" id="backToInvitation" type="button">
+          العودة إلى نص الدعوة
+        </button>
+      </div>
+
+      <div class="event-view event-location-view" id="locationView" aria-hidden="true">
+        <p class="section-eyebrow">نلتقي بكم في</p>
+        <h2>صالة الياسمين</h2>
+        <div class="map-frame" role="img" aria-label="رسم زخرفي للموقع، وليس خريطة دقيقة">
+          <svg viewBox="0 0 320 238" aria-hidden="true" focusable="false">
+            <rect width="320" height="238" fill="#edf3f5"/>
+            <path d="M-10 55 Q90 25 173 72 T340 49 M-10 184 Q66 161 147 180 T340 156" stroke="#fff" stroke-width="23" fill="none"/>
+            <path d="M55 -10 Q88 105 46 250 M225 -10 Q191 104 280 250" stroke="#fff" stroke-width="17" fill="none"/>
+            <path d="M-10 55 Q90 25 173 72 T340 49 M-10 184 Q66 161 147 180 T340 156 M55 -10 Q88 105 46 250 M225 -10 Q191 104 280 250" stroke="#aec4ce" stroke-width="1" fill="none"/>
+            <path d="M88 166 Q105 139 145 142 T197 107" fill="none" stroke="#6e9db3" stroke-width="5" stroke-dasharray="6 7" stroke-linecap="round"/>
+            <circle cx="88" cy="166" r="6" fill="#749cb1"/>
+            <path d="M213 83c0 15-17 35-17 35s-17-20-17-35a17 17 0 1 1 34 0Z" fill="#234d6c"/>
+            <circle cx="196" cy="83" r="6" fill="#f9fbf8"/>
+          </svg>
+          <span class="map-pin-label">صالة الياسمين</span>
+          <span class="map-caption">رسم توضيحي · افتح الخرائط للموقع الفعلي</span>
+        </div>
+        <div class="venue-list">
+          <div class="venue"><h3>الرجال</h3><p>جنوب الفرن الآلي</p></div>
+          <div class="venue"><h3>النساء</h3><p>الطابق الأول</p></div>
+        </div>
+        <a class="scene-button map-link" id="mapLink" target="_blank"
+           rel="noopener noreferrer"
+           href="https://maps.app.goo.gl/Y7yEdLwinDk4oUyu7">
+          فتح موقع الصالة في الخرائط ↗
+        </a>
+        <button class="scene-button rsvp-next" id="showRsvp" type="button">
+          تأكيد الحضور
+        </button>
+        <button class="text-button" id="backToDate" type="button">العودة إلى الموعد</button>
+      </div>
+    </section>
+
+    <section class="rsvp-scene" id="rsvpScene"
+             aria-label="تأكيد الحضور" aria-hidden="true">
+      <div class="rsvp-content">
+        <p class="section-eyebrow">يسعدنا ردّكم</p>
+        <h2 id="rsvpTitle">تأكيد الحضور</h2>
+        <p class="rsvp-intro">أخبرونا إن كنتم ستشاركوننا فرحتنا</p>
+
+        <form id="rsvpForm" name="wedding-rsvp" method="POST"
+              data-formspree-endpoint="https://formspree.io/f/xnpnzbae"
+              aria-labelledby="rsvpTitle">
+          <input type="hidden" name="totalGuests" id="totalGuests" value="0">
+          <label class="field-label" for="guestName">اسم المدعو</label>
+          <input id="guestName" name="guestName" type="text"
+                 autocomplete="name" maxlength="80" required
+                 placeholder="الاسم الكامل">
+
+          <fieldset class="attendance-choices">
+            <legend>هل ستحضر؟</legend>
+            <label><input type="radio" name="attendance" value="yes" required> سأحضر بكل سرور</label>
+            <label><input type="radio" name="attendance" value="no"> أعتذر عن الحضور</label>
+          </fieldset>
+
+          <div class="guest-count" id="guestCountField" hidden>
+            <label class="field-label" for="guestCount">عدد المرافقين معك</label>
+            <input id="guestCount" name="guestCount" type="number"
+                   inputmode="numeric" min="0" max="9" step="1" value="0" disabled>
+            <small>لا تحتسب نفسك؛ اكتب ٠ إن كنت ستحضر وحدك</small>
+          </div>
+
+          <button class="scene-button rsvp-submit" id="rsvpSubmit" type="submit">
+            إرسال الرد
+          </button>
+        </form>
+
+        <p class="rsvp-status" id="rsvpStatus" role="status" aria-live="polite"></p>
+        <button class="text-button" id="backToLocation" type="button">
+          العودة إلى موقع الصالة
+        </button>
+      </div>
+    </section>
+
+    <dialog class="thank-you-dialog" id="thankYouDialog"
+            aria-labelledby="thankYouTitle" aria-describedby="thankYouMessage">
+      <div class="party-art" aria-hidden="true">
+        <span class="balloon balloon-one"></span>
+        <span class="balloon balloon-two"></span>
+        <span class="balloon balloon-three"></span>
+        <span class="streamer"></span><span class="streamer"></span>
+        <span class="streamer"></span><span class="streamer"></span>
+        <span class="streamer"></span><span class="streamer"></span>
+        <span class="streamer"></span><span class="streamer"></span>
+        <span class="streamer"></span><span class="streamer"></span>
+        <span class="streamer"></span><span class="streamer"></span>
+      </div>
+      <p class="thank-you-symbol" aria-hidden="true">✦</p>
+      <h2 id="thankYouTitle">شكرًا لتأكيد حضورك</h2>
+      <p id="thankYouMessage"></p>
+      <button class="scene-button thank-you-close" id="closeThankYou"
+              type="button">العودة إلى الدعوة</button>
+    </dialog>
+  </main>
+</body>
+</html>
